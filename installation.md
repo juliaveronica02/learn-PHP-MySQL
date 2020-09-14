@@ -24,6 +24,8 @@
 
 ## Push to github.
 * git init.
+* git add installation.md.
 * git commit -m "done".
 * git remote add origin https://github.com/juliaveronica02/learn-PHP-MySQL.git.
 * git push -u origin master.
+* finish.
