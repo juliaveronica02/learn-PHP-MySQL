@@ -57,7 +57,7 @@ echo 25+27;
 ?>
 ```
 
-## Code Comments.
+## Code Comments (For noted).
 * Single Line Comments = //.
 * Pound Sign Comments = #.
 * Double Line Comments =
@@ -66,3 +66,29 @@ echo 25+27;
 * This is a comment.
 */
 ```
+
+## Variable Names.
+* Starts with a "$".
+* Followed by a letter of _underscore.
+* Can contain letters, numbers underscores or dahses.
+* No spaces.
+* Case-sensitive.
+* Example:
+  - $item.
+  - $Item (different than $item).
+  - $myVariable (recommend).
+  - $this_variable (recommend).
+  - $this-variable (look like minus).
+  - $product3.
+  - $_book (has special meaning).
+  - $__bookpage (double underscore bad meaning).
+
+## Strings.
+* Set of characters.
+* Can be defined in single quotes or double quotes.
+* Can include HTML.
+* But don't nest quotes.
+* We can include variable inside ("") double quotes.
+* We can't include variable inside ('') single quotes.
+* We can differentiate with {$data} inside "" double quotes.
+* Use back slash to escape value.
