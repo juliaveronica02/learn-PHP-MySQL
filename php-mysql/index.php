@@ -8,10 +8,13 @@ include("config.php");
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>Student Table!</title>
 </head>
 <body>
-    <table border="1">
+<div class="table-responsive" style="width: 70%; margin-left: 13%">
+    <table class="table table-bordered table-hover text-center">
+    <thead>
     <!-- 2. Table Header. -->
     <tr>
     <td> NPM </td>
@@ -21,6 +24,7 @@ include("config.php");
     <td> Jenis Kelamin </td>
     <td> Actions </td>
     </tr>
+    </thead>
     <!-- list from the table. -->
     <?php
     // 3. from student database table.
@@ -40,13 +44,15 @@ include("config.php");
         // echo "<td>Gender data.</td>";
             echo "<td>" .$mahasiswa["Jenis_Kelamin"]. "</td>";
             echo "<td>";
-                echo "<a href='frm-edit.php?id=".$mahasiswa["Npm"]."'> Edit </a>";
-                echo "<a href='frm-delete.php?id=".$mahasiswa["Npm"]."'> Delete </a>";
+                echo "<button class=btn-primary href='frm-edit.php?id=".$mahasiswa["Npm"]."'> Edit </button>";
+                echo "&nbsp&nbsp";
+                echo "<button class=btn-danger href='frm-delete.php?id=".$mahasiswa["Npm"]."'> Delete </button>";
             echo "</td>";
         echo "</tr>";
     }
     ?>
     </table>
+    </div>
     <p>Student: <?php echo mysqli_num_rows($query); ?> </p>
 </body>
 </html>

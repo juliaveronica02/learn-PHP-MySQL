@@ -29,3 +29,13 @@
 * git remote add origin https://github.com/juliaveronica02/learn-PHP-MySQL.git.
 * git push -u origin master.
 * finish.
+
+## Ubuntu Remove harddisk.
+* ubuntu unable to stop st2000lm007-1r8174 = solutions (sudo umount -f /dev/sdb1).
+
+## Open learn-php folder on linux ubuntu.
+* cd /opt/lampp.
+* sudo ./manager-linux-x64.run.
+* cd /opt/lampp/htdocs/learn-php.
+* sudo service mysql stop.
+* code .
